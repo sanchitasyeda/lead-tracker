@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import data from "./mock-data.json";
 
 const App = () => {
+
+  const [contacts, setContacts] = useState(data); // taking data and storing it in state
+
   return <div className="app-container">
     <table>
       <thead>
@@ -14,16 +18,36 @@ const App = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Joey Boey</td>
-          <td>123-456-7898</td>
-          <td>joeyboey@joey.ca</td>
-          <td>HCA</td>
-          <td>TAG</td>
-          <td>Note</td>
+        {contacts.map((contact) => (<tr>
+          <td>{contact.name}</td>
+          <td>{contact.phoneNumber}</td>
+          <td>{contact.email}</td>
+          <td>{contact.program}</td>
+          <td>{contact.tags}</td>
+          <td>{contact.notes}</td>
         </tr>
+        ))}
+
       </tbody>
     </table>
+    <h2>Add a Contact</h2>
+    <form>
+      <input type="text"
+        name="name"
+        required="required"
+        placeholder="Enter a name"
+      />
+      <input type="text"
+        name="phoneNumber"
+        required="required"
+        placeholder="Enter a phone number"
+      />
+      <input type="text"
+        name="email"
+        required="required"
+        placeholder="Enter an email"
+      />
+    </form>
   </div>
 
 };

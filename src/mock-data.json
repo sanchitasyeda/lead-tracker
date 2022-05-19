@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Joey Boey",
+        "phoneNumber": "123-456-7898",
+        "email": "joeyboey@joey.ca",
+        "program": "HCA",
+        "tags": "TAG",
+        "notes": "Note"
+    },
+    {
+        "id": 1,
+        "name": "Leroy Jenkins",
+        "phoneNumber": "123-420-6969",
+        "email": "LEEEEEEEEEEEROY@jenkins.ca",
+        "program": "CSW",
+        "tags": "HOT",
+        "notes": "N/A"
+    },
+    {
+        "id": 1,
+        "name": "No Mo",
+        "phoneNumber": "123-456-5000",
+        "email": "nomo@joey.ca",
+        "program": "AA",
+        "tags": "COLD",
+        "notes": "Not like this"
+    }
+]
